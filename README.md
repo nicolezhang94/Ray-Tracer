@@ -131,3 +131,4 @@ Any of the following circumstances will end the program:
 3. Bug fixed: Changing image size dimensions does not shrink image.
 4. Bug fixed: Surface normals are correct now.
 5. Bug fixed: Adding lights will no longer make the scene darker.
+6. This project was created in whole by Nicole Zhang
