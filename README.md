@@ -68,6 +68,7 @@ x, y, and z coordinates along with a radius size. Non-unit length vectors will b
 The "parallel" keyword turns on parallel projection. The following details the correct format
 for each keyword in the input file:
 
+```
 eye        eyex eyey eyez
 viewdir    vdirx vdiry vdirz
 updir      upx upy upz
@@ -86,21 +87,21 @@ f          v1/vt1 v2/vt2 v3/vt3
 f          v1/vt1/vn1 v2/vt2/vn2 v3/vt3/vn3
 f          v1//vn1 v2//vn2 v3//vn3
 parallel
-
+```
 
 ### VI. ASSUMPTIONS ###
 
 1. The input file must be a text file.
 2. The input file is in the same directory as the executable file, or a path must be provided.
 3. Texture files must have one-line headers with no comments using the following ASCII PPM format:
-   P3 width height 255
-   r
-   g
-   b
-   r
-   g
-   b
-   ...
+   * P3 width height 255
+   * r
+   * g
+   * b
+   * r
+   * g
+   * b
+   * ...
 4. Triangle face input must not point to invalid/out-of-bounds vector indices.
 5. Triangles may not be defined before sufficient appropriate vertices have been defined.
 6. A material color must be specified before any objects are defined.
