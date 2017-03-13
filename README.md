@@ -1,11 +1,6 @@
-************************************************
-*            CSCI 5607 ASSIGNMENT 1D           *
-* Date: 11/05/2015                             *
-* Name: Nicole Zhang                           *
-* ID: zhan2105                                 *
-************************************************
+# Ray Tracer
 
-I. PURPOSE
+### I. PURPOSE ###
 
 The purpose of this program is to create a scene including textured and non-textured
 spheres and triangle-based polygons with flat or smooth shading based on a given input
@@ -13,7 +8,7 @@ text file using the Phong illumination model. Transparent and reflective objects
 also be created using recursive ray tracing. The output image will be in ASCII PPM format.
 
 
-II. COMPILATION
+### II. COMPILATION ###
 
 To compile this program, simply type "make" into a Linux machine terminal. Note: This
 program uses C++11, so a compatible compiler is required. However, if an older compiler
@@ -21,14 +16,14 @@ is used, the program will still be able to run, as the makefile prepares for suc
 by using the -std=c++0x flag.
 
 
-III. RUNNING THE PROGRAM
+### III. RUNNING THE PROGRAM ###
 
 To run the program, type "./raytracer" with a text file of correct syntax into the terminal
 in the directory of the executable. For example, to run the provided sample text file, type
 "./raytracer image1.txt" into the terminal.
 
 
-IV. WHAT THE PROGRAM DOES
+### IV. WHAT THE PROGRAM DOES ###
 
 This program takes in an text file and creates a scene based on the specified parameters.
 The scene contains spheres, triangles, and lights that are specified by the input file. The
@@ -54,7 +49,7 @@ takes in an ASCII PPM image in correct format and applies that to the specified 
 objects. Parallel projection may also be used instead of perspective projection.
 
 
-V. SPECIFICATIONS
+### V. SPECIFICATIONS ###
 
 The input file must include the minimum information to create a scene: the view origin,
 viewing direction, horizontal field of view, the output image size, and a background color,
@@ -93,7 +88,7 @@ f          v1//vn1 v2//vn2 v3//vn3
 parallel
 
 
-VI. ASSUMPTIONS
+### VI. ASSUMPTIONS ###
 
 1. The input file must be a text file.
 2. The input file is in the same directory as the executable file, or a path must be provided.
@@ -113,7 +108,7 @@ VI. ASSUMPTIONS
    provided.
 
 
-VII. ERROR HANDLING
+### VII. ERROR HANDLING ###
 
 Any of the following circumstances will end the program:
 1. Zero-length input vectors
@@ -125,7 +120,7 @@ Any of the following circumstances will end the program:
 7. RGB values not within 0-1 range
 
 
-VIII. NOTES
+### VIII. NOTES ###
 
 1. Occasionally, files with certain invalid artifacts will cause the program to end if there
    are spaces or empty lines in the file.
