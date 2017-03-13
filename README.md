@@ -94,14 +94,16 @@ parallel
 1. The input file must be a text file.
 2. The input file is in the same directory as the executable file, or a path must be provided.
 3. Texture files must have one-line headers with no comments using the following ASCII PPM format:
-   * P3 width height 255
-   * r
-   * g
-   * b
-   * r
-   * g
-   * b
-   * ...
+   ```
+   P3 width height 255
+   r
+   g
+   b
+   r
+   g
+   b
+   ...
+   ```
 4. Triangle face input must not point to invalid/out-of-bounds vector indices.
 5. Triangles may not be defined before sufficient appropriate vertices have been defined.
 6. A material color must be specified before any objects are defined.
